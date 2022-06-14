@@ -12,6 +12,7 @@ const App = () => {
   };
   const onClickCountReset = () => {
     setNum(0);
+    setFaceShowFlag(false);
   };
   const onClickSwitchShowFlag = () => {
     setFaceShowFlag(!faceShowFlag);
