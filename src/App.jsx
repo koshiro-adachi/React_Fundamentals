@@ -1,7 +1,7 @@
 /*eslint react-hooks/exhaustive-deps:off*/
 import React, { useEffect, useState } from "react";
 //ReactDomはHTMLに反映する時に必要なももので、経由させるだけの今回のファイルには必要ない
-import ColorfullMessage from "./compornents/ColorfulMessage";
+import { ColorfulMessage } from "./compornents/ColorfulMessage";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -32,8 +32,8 @@ const App = () => {
   return (
     <>
       <h1 style={{ color: "red" }}>こんにちは！</h1>
-      <ColorfullMessage color="blue">元気ですか？</ColorfullMessage>
-      <ColorfullMessage color="pink">元気です！</ColorfullMessage>
+      <ColorfulMessage color="blue">元気ですか？</ColorfulMessage>
+      <ColorfulMessage color="pink">元気です！</ColorfulMessage>
       <button onClick={onClickCountUp}>カウントアップ</button>
       <button onClick={onClickCountReset}>カウントリセット</button>
       <button onClick={onClickSwitchShowFlag}>on/off</button>
